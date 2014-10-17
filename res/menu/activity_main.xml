@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_settings"
+        android:title="Numara Ekle"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+    <item android:id="@+id/menu_show"
+        android:title="Listeyi Gor"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+</menu>

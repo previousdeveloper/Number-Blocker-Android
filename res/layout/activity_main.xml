@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d7c5c5"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/View1"
+        android:layout_width="wrap_content"
+        android:layout_height="2dip"
+        android:layout_alignParentLeft="true"
+        android:background="#FF0000" />
+    <RadioGroup
+        android:id="@+id/radGroup1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/View1"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="50dp" >
+
+        <RadioButton
+            android:id="@+id/blockAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tüm Rehberi Engelle"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/blockUnsaved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bilinmeyen Numaraları Engelle"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/blockFromList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Listedeki Numaraları Engelle"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/cancelBlocker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Engellemeleri Kaldır"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/View2"
+        android:layout_width="wrap_content"
+        android:layout_height="2dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/radGroup1"
+        android:background="#FF0000" />
+
+    <com.startapp.android.publish.banner.Banner
+        android:id="@+id/startAppBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/View2"
+        android:layout_centerHorizontal="true" >
+    </com.startapp.android.publish.banner.Banner>
+
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnAdd"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="29dp"
+        android:background="#837171"
+        android:text="Listeyi Gör" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#837171"
+        android:text="Num. Ekle" />
+
+</RelativeLayout>
